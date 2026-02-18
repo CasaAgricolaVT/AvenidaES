@@ -314,6 +314,59 @@
             margin-left: 0.5rem;
         }
 
+        .summer {
+            background: linear-gradient(135deg, #1a3a5c 0%, #0d2b45 100%);
+            color: var(--warm-white);
+            padding: 5rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .summer::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: radial-gradient(circle at 10% 20%, rgba(100, 200, 255, 0.05) 0%, transparent 50%),
+                              radial-gradient(circle at 90% 80%, rgba(212, 175, 55, 0.05) 0%, transparent 50%);
+        }
+
+        .summer .section-title {
+            color: #64c8ff;
+        }
+
+        .summer .section-title::after {
+            background: var(--gold);
+        }
+
+        .summer-intro {
+            font-size: 1.2rem;
+            opacity: 0.85;
+            margin-bottom: 2.5rem;
+            font-style: italic;
+        }
+
+        .summer-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .summer .excursion-card {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .summer .excursion-card:hover {
+            border-color: #64c8ff;
+        }
+
+        .summer .excursion-card h3 {
+            color: #64c8ff;
+            font-size: 1.4rem;
+        }
+
         .excursions {
             background: var(--deep-green);
             color: var(--warm-white);
@@ -504,16 +557,16 @@
     <div class="intro">
         <div class="container">
             <p class="intro-text">
-                El <strong>Avenida</strong> es su hogar en Elvas, la ciudad-fortaleza más representativa de la escuela de fortificación abaluartada europea. 
-                Estratégicamente ubicado en la Avenida da Piedade, le ofrecemos acceso privilegiado al <strong>Patrimonio Mundial de la UNESCO</strong>, 
-                al mayor acueducto de la Península Ibérica y a la auténtica gastronomía alentejana. 
+                <strong>Avenida</strong> es su hogar en Elvas, la ciudad-fortaleza más representativa de la escuela de fortificación abaluartada europea.
+                Estratégicamente ubicado en la Avenida da Piedade, le ofrecemos acceso privilegiado al <strong>Patrimonio Mundial de la UNESCO</strong>,
+                al mayor acueducto de la Península Ibérica y a la auténtica gastronomía alentejana.
                 Descubra Elvas con la comodidad de sentirse en casa.
             </p>
         </div>
     </div>
 
     <div class="container">
-        <h2 class="section-title">Pastelerías & Dulces</h2>
+        <h2 class="section-title">Pastelerías & Dulcería</h2>
         <div class="grid">
             <div class="card stagger-animation">
                 <div class="card-header">
@@ -522,7 +575,7 @@
                 </div>
                 <div class="card-body">
                     <div class="establishment">
-                        <p>Ideal para desayunar, a una manzana de la Avenida.</p>
+                        <p>Ideal para desayunar, a una manzana de Avenida.</p>
                         <div class="highlight">Pastelería de elaboración propia, excelente desayuno y el auténtico Pastel de Nata (Belém)</div>
                         <a href="https://maps.app.goo.gl/qsu3bFemHW9hZP6h6" target="_blank">Ver ubicación</a>
                     </div>
@@ -537,7 +590,7 @@
                 <div class="card-body">
                     <div class="establishment">
                         <p>Ideal para el desayuno o una comida ligera, con vistas al Acueducto de Amoreira.</p>
-                        <div class="highlight">Pastelería portuguesa con especialidad en croissants y crepes</div>
+                        <div class="highlight">Pastelería portuguesa especializada en croissants y crepes</div>
                         <a href="https://maps.app.goo.gl/uN8UFVRr51kXqbVXA" target="_blank">Ver ubicación</a>
                     </div>
                 </div>
@@ -550,8 +603,8 @@
                 </div>
                 <div class="card-body">
                     <div class="establishment">
-                        <p>¡Especialidad única e imprescindible!</p>
-                        <div class="highlight">La única Sericaia elaborada en horno de leña. Solo para llevar (take-away) - se recomienda llamar con antelación</div>
+                        <p>¡Especialidad única e imperdible!</p>
+                        <div class="highlight">Única Sericaia elaborada en horno de leña. Solo para llevar – se recomienda llamar con antelación</div>
                         <a href="https://maps.app.goo.gl/PhMYZ9bLaDFK55ZD8" target="_blank">Ver ubicación</a>
                     </div>
                 </div>
@@ -583,7 +636,7 @@
                 </div>
                 <div class="card-body">
                     <div class="establishment">
-                        <p>Ubicado junto al Mercado Municipal Casa das Barcas, basado en la rica cocina regional.</p>
+                        <p>Situado junto al Mercado Municipal Casa das Barcas, con base en la rica cocina regional.</p>
                         <div class="highlight">Comida tradicional en restaurante de calidad</div>
                         <a href="https://maps.app.goo.gl/p9DtnX2PUveSndgH6" target="_blank">Ver ubicación</a>
                     </div>
@@ -598,7 +651,7 @@
                 <div class="card-body">
                     <div class="establishment">
                         <p>Terraza moderna con vistas privilegiadas al Acueducto de Amoreira.</p>
-                        <div class="highlight">Comida moderna en restaurante de calidad</div>
+                        <div class="highlight">Cocina moderna en restaurante de calidad</div>
                         <a href="https://maps.app.goo.gl/cjtpBZ38KE9sYZCs8" target="_blank">Ver ubicación</a>
                     </div>
                 </div>
@@ -612,7 +665,7 @@
                 <div class="card-body">
                     <div class="establishment">
                         <p>Platos especiales mensuales inspirados en ingredientes de temporada y las famosas pizzerías napolitanas.</p>
-                        <div class="highlight">Comida italiana en restaurante de calidad</div>
+                        <div class="highlight">Cocina italiana en restaurante de calidad</div>
                         <a href="https://maps.app.goo.gl/9Y2PNfJSx2SJSsok7" target="_blank">Ver ubicación</a>
                     </div>
                 </div>
@@ -626,7 +679,7 @@
                 <div class="card-body">
                     <div class="establishment">
                         <p>Restaurante de autor con experiencias únicas, atractiva terraza y decoración contemporánea.</p>
-                        <div class="highlight">Comida sofisticada en restaurante de diseño</div>
+                        <div class="highlight">Cocina sofisticada en restaurante de diseño</div>
                         <a href="https://maps.app.goo.gl/ZirRh4D5CvKBKJzS8" target="_blank">Ver ubicación</a>
                     </div>
                 </div>
@@ -652,11 +705,12 @@
                 </div>
                 <div class="card-body">
                     <div class="establishment">
-                        <div class="highlight">Comida Tradicional en Restaurante de Carretera</div>
+                        <div class="highlight">Comida tradicional en restaurante de carretera</div>
                         <a href="https://maps.app.goo.gl/oCrcCCVyam6X6ZXr9" target="_blank">Ver ubicación</a>
                     </div>
                 </div>
             </div>
+
         </div>
 
         <h2 class="section-title" style="margin-top: 5rem;">Alrededores de Elvas</h2>
@@ -668,7 +722,7 @@
                 </div>
                 <div class="card-body">
                     <div class="establishment">
-                        <div class="highlight">Comida casera con atención íntima en restaurante de pueblo</div>
+                        <div class="highlight">Cocina casera con atención íntima en restaurante de pueblo</div>
                         <a href="https://maps.app.goo.gl/haaz7ZyQcu31Ew5TA" target="_blank">Ver ubicación</a>
                     </div>
                 </div>
@@ -681,7 +735,7 @@
                 </div>
                 <div class="card-body">
                     <div class="establishment">
-                        <div class="highlight">Comida tradicional y caza en restaurante de calidad</div>
+                        <div class="highlight">Cocina tradicional y caza en restaurante de calidad</div>
                         <a href="https://maps.app.goo.gl/KyPXyzrC2uzFQxiS6" target="_blank">Ver ubicación</a>
                     </div>
                 </div>
@@ -694,7 +748,7 @@
                 </div>
                 <div class="card-body">
                     <div class="establishment">
-                        <div class="highlight">Comida Tradicional en Restaurante Tradicional</div>
+                        <div class="highlight">Comida tradicional en restaurante típico</div>
                         <a href="https://maps.app.goo.gl/ootVSLChSgTpC9TA7" target="_blank">Ver ubicación</a>
                     </div>
                 </div>
@@ -707,7 +761,7 @@
                 </div>
                 <div class="card-body">
                     <div class="establishment">
-                        <div class="highlight">Comida Tradicional en Restaurante (Casa de Comidas) Típico</div>
+                        <div class="highlight">Comida tradicional en restaurante (Casa de Comidas) típico</div>
                         <a href="https://maps.app.goo.gl/rpT2kUdJfz41usAx5" target="_blank">Ver ubicación</a>
                     </div>
                 </div>  
@@ -723,7 +777,7 @@
                 <div class="excursion-card stagger-animation">
                     <h3>Juromenha</h3>
                     <p class="distance">📍 17,5 km de Elvas</p>
-                    <p>Aldea medieval con castillo y mirador privilegiado hacia España y el Río Guadiana. Un viaje al pasado medieval portugués.</p>
+                    <p>Aldea medieval con castillo y mirador privilegiado hacia España y el río Guadiana. Un viaje al pasado medieval portugués.</p>
                     <a href="https://goo.gl/maps/qBAVeHE31rmzyApH8" target="_blank" style="color: var(--gold);">Ver ubicación →</a>
                 </div>
 
@@ -737,7 +791,7 @@
                 <div class="excursion-card stagger-animation">
                     <h3>Monsaraz</h3>
                     <p class="distance">📍 69,7 km de Elvas</p>
-                    <p>Aldea medieval en perfecto estado de conservación, con un espectacular mirador sobre el espejo de agua del Embalse de Alqueva.</p>
+                    <p>Aldea medieval en perfecto estado de conservación, con un espectacular mirador al espejo de agua del Embalse de Alqueva.</p>
                     <a href="https://goo.gl/maps/MWw1fFQdjqAVAfJA8" target="_blank" style="color: var(--gold);">Ver ubicación →</a>
                 </div>
             </div>
@@ -751,14 +805,14 @@
                 <div class="parking-item">
                     <h4>Praça da República</h4>
                     <p>Subterráneo, 1ª hora gratuita</p>
-                    <span class="tag">No recomendable para vehículos grandes</span>
+                    <span class="tag">No recomendado para vehículos grandes</span>
                     <br><a href="https://goo.gl/maps/5Tix55jzNZXSFbWu5" target="_blank">Ver en el mapa →</a>
                 </div>
 
                 <div class="parking-item">
                     <h4>Praça de Armas</h4>
                     <span class="tag">Gratuito</span>
-                    <span class="tag" style="background: var(--terracotta);">Recomendable para vehículos grandes</span>
+                    <span class="tag" style="background: var(--terracotta);">Recomendado para vehículos grandes</span>
                     <br><a href="https://goo.gl/maps/BLvCWRRELofCV47E7" target="_blank">Ver en el mapa →</a>
                 </div>
 
@@ -772,7 +826,7 @@
                     <h4>Parque Casa das Barcas</h4>
                     <p>Acceso a través de las murallas a un nuevo aparcamiento de grandes dimensiones</p>
                     <span class="tag">Gratuito</span>
-                    <span class="tag" style="background: var(--terracotta);">Recomendable para vehículos grandes</span>
+                    <span class="tag" style="background: var(--terracotta);">Recomendado para vehículos grandes</span>
                     <br><a href="https://goo.gl/maps/1rEaiMaiYGzj9BFx9" target="_blank">Ver en el mapa →</a>
                 </div>
             </div>
@@ -789,7 +843,7 @@
                 </div>
                 <div class="card-body">
                     <div class="establishment">
-                        <p>Visita obligada al Castillo y las calles circundantes. Aproveche para conocer la Fábrica Museo de la Ciruela de Elvas.</p>
+                        <p>Visita obligada al Castillo y sus calles circundantes. Aproveche para conocer la Fábrica Museo de la Ciruela de Elvas.</p>
                         <a href="https://goo.gl/maps/pGN14FSZkz9rZH1M6" target="_blank">Ver Castillo</a>
                         <br>
                         <a href="https://goo.gl/maps/sZMxK5sf9gRnubAn6" target="_blank">Ver Fábrica Museo de la Ciruela</a>
@@ -818,7 +872,7 @@
                 </div>
                 <div class="card-body">
                     <div class="establishment">
-                        <div class="highlight">El mayor acueducto de la Península Ibérica con 8,5 km de extensión, datado en 1498</div>
+                        <div class="highlight">Mayor acueducto de la Península Ibérica con 8,5 km de extensión, datado en 1498</div>
                         <a href="https://goo.gl/maps/qxJF5qeC4oUBUTBA6" target="_blank">Ver ubicación</a>
                     </div>
                 </div>
@@ -844,9 +898,64 @@
                 </div>
                 <div class="card-body">
                     <div class="establishment">
-                        <p>Situada en la Praça da República, ideal para recoger información sobre Elvas y la región.</p>
+                        <p>Situada en la Praça da República, ideal para obtener información sobre Elvas y la región.</p>
                         <a href="https://goo.gl/maps/1mmQAauJNFjGkJMW7" target="_blank">Ver ubicación</a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="summer">
+        <div class="container">
+            <h2 class="section-title">☀️ Si el Tiempo lo Permite...</h2>
+            <p class="summer-intro">En los días calurosos del verano, refréscate en las piscinas y playas fluviales de la región.</p>
+
+            <h3 class="summer-subtitle">En Elvas</h3>
+            <div class="grid">
+                <div class="excursion-card stagger-animation">
+                    <h3>🏊 Piscinas Municipales de Elvas</h3>
+                    <p class="distance">Públicas – Al aire libre y cubiertas según la época del año</p>
+                    <a href="https://goo.gl/maps/SQJMWpSPTKCFykL2A" target="_blank" style="color: var(--gold);">Ver ubicación →</a>
+                </div>
+
+                <div class="excursion-card stagger-animation">
+                    <h3>🏊 Piscina José Vicente Abreu</h3>
+                    <p class="distance">Club Elvense de Natación – Al aire libre según la época del año</p>
+                    <a href="https://goo.gl/maps/xbz2eMpbwhA5wTP47" target="_blank" style="color: var(--gold);">Ver ubicación →</a>
+                </div>
+
+                <div class="excursion-card stagger-animation">
+                    <h3>🏊 Piscinas Elxadai</h3>
+                    <p class="distance">Unidad Hotelera – Al aire libre según la época del año</p>
+                    <a href="https://goo.gl/maps/TCJM3XP3RshGmFy29" target="_blank" style="color: var(--gold);">Ver ubicación →</a>
+                </div>
+            </div>
+
+            <h3 class="summer-subtitle" style="margin-top: 3rem;">En la Región</h3>
+            <div class="grid">
+                <div class="excursion-card stagger-animation">
+                    <h3>🏖️ Playa Fluvial de Azenhas d'El Rei</h3>
+                    <p class="distance">📍 52,7 km de Avenida · Alandroal</p>
+                    <a href="https://goo.gl/maps/BNfq9G3JqFdMZZUZ6" target="_blank" style="color: var(--gold);">Ver ubicación →</a>
+                </div>
+
+                <div class="excursion-card stagger-animation">
+                    <h3>🌊 Piscinas Naturales de La Codosera</h3>
+                    <p class="distance">📍 55,3 km de Avenida · España</p>
+                    <a href="https://goo.gl/maps/1ge4KtgAjAZPuCDWA" target="_blank" style="color: var(--gold);">Ver ubicación →</a>
+                </div>
+
+                <div class="excursion-card stagger-animation">
+                    <h3>🏖️ Playa Fluvial de Monsaraz</h3>
+                    <p class="distance">📍 71,2 km de Avenida</p>
+                    <a href="https://goo.gl/maps/uH5XVZ2C2QZ6MREs9" target="_blank" style="color: var(--gold);">Ver ubicación →</a>
+                </div>
+
+                <div class="excursion-card stagger-animation">
+                    <h3>🎢 Parque Acuático AquaBadajoz</h3>
+                    <p class="distance">📍 14,7 km de Avenida · Badajoz, España</p>
+                    <a href="https://g.page/AQUABadajoz?share" target="_blank" style="color: var(--gold);">Ver ubicación →</a>
                 </div>
             </div>
         </div>
